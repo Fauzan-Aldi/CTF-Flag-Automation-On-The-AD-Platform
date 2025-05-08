@@ -1,10 +1,5 @@
-Berikut deskripsi proyek yang rapi dan informatif untuk judul:
-**CTF-Flag-Automation-On-The-AD-Platform**
-*Subjudul: Implementing Automation for Exploits and Flag Submission on AD CTF*
 
----
-
-## 📄 Deskripsi
+## 📄 CTF-Flag-Automation-On-The-AD-Platform
 
 **CTF-Flag-Automation-On-The-AD-Platform** adalah sebuah proyek Python yang dirancang untuk **mengotomatiskan proses eksploitasi dan pengiriman flag pada platform AD CTF**. Dengan menggunakan sistem ini, peserta CTF tidak perlu lagi mengirimkan flag secara manual — cukup buat skrip eksploitasi, jalankan, dan sistem akan secara otomatis mengirimkan flag yang berhasil diperoleh ke server CTF.
 
