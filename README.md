@@ -1,27 +1,74 @@
-# CTF-Flag-Automation-On-The-AD-Platform
+Berikut deskripsi proyek yang rapi dan informatif untuk judul:
+**CTF-Flag-Automation-On-The-AD-Platform**
+*Subjudul: Implementing Automation for Exploits and Flag Submission on AD CTF*
 
-Implementing Automation for Exploits and Flag Submission on AD CTF
-## Requirements 
-- `python3` with pip
-- `requests` library
-- `python-dotenv` library
-- `flask` library
+---
 
-## Usage
+## 📄 Deskripsi
 
-1. Clone this repository
-2. Install the requirements
-3. Make a `.env` file based on the `.env.example` file
+**CTF-Flag-Automation-On-The-AD-Platform** adalah sebuah proyek Python yang dirancang untuk **mengotomatiskan proses eksploitasi dan pengiriman flag pada platform AD CTF**. Dengan menggunakan sistem ini, peserta CTF tidak perlu lagi mengirimkan flag secara manual — cukup buat skrip eksploitasi, jalankan, dan sistem akan secara otomatis mengirimkan flag yang berhasil diperoleh ke server CTF.
+
+Proyek ini cocok digunakan untuk mempercepat penyelesaian challenge dalam kompetisi CTF (Capture The Flag), terutama ketika berhadapan dengan banyak tantangan dalam waktu terbatas.
+
+---
+
+## ⚙️ Kebutuhan
+
+Sebelum menggunakan proyek ini, pastikan Anda telah menginstal:
+
+* Python 3 dengan pip
+* Library Python berikut:
+
+  * `requests`
+  * `python-dotenv`
+  * `flask`
+
+Instalasi dapat dilakukan melalui:
+
 ```bash
-cp .env.example .env
-``` 
-4. Run the server with `python3 server.py`
-5. Make exploit based on the `template.py` file
-```bash
-cp template.py exploit-<chall_id>.py
+pip install -r requirements.txt
 ```
-6. Thing to do in `exploit.py`
-   - Fill CHALL_ID with the challenge id
-   - Fill CHALL_PORT with the challenge port
-   - Create exploit function
-   - Change the tick
+
+---
+
+## 🚀 Cara Penggunaan
+
+1. **Clone repositori ini**
+
+   ```bash
+   git clone https://github.com/FauzanAldi/CTF-Flag-Automation-On-The-AD-Platform.git
+   cd CTF-Flag-Automation-On-The-AD-Platform
+   ```
+
+2. **Instal seluruh dependensi**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Buat file konfigurasi `.env`**
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Lalu sesuaikan isi file `.env` dengan token dan URL dari platform AD CTF.
+
+4. **Jalankan server lokal**
+
+   ```bash
+   python3 server.py
+   ```
+
+5. **Buat file eksploitasi dari template**
+
+   ```bash
+   cp template.py exploit-<chall_id>.py
+   ```
+
+6. **Edit file `exploit-<chall_id>.py` sesuai tantangan**
+
+   * Isi `CHALL_ID` dengan ID challenge
+   * Isi `CHALL_PORT` dengan port challenge
+   * Tulis fungsi `exploit()` untuk mengeksekusi serangan
+   * Pastikan memanggil `tick()` agar flag dikirim otomatis
