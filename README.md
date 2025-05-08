@@ -36,7 +36,7 @@ pip install -r requirements.txt
 1. **Clone repositori ini**
 
    ```bash
-   git clone https://github.com/FauzanAldi/CTF-Flag-Automation-On-The-AD-Platform.git
+   git clone https://github.com/Fauzan-Aldi/CTF-Flag-Automation-On-The-AD-Platform.git
    cd CTF-Flag-Automation-On-The-AD-Platform
    ```
 
